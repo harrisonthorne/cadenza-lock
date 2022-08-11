@@ -23,6 +23,7 @@ dependencies = [
  "smithay-client-toolkit",
  "time",
  "users 0.11.0",
+ "wayland-protocols",
 ]
 
 [[package]]
@@ -116,6 +117,16 @@ name = "memchr"
 version = "2.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2dffe52ecf27772e601905b7522cb4ef790d2cc203488bbd0e2fe85fcb74566d"
+
+[[package]]
+name = "memmap"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6585fd95e7bb50d6cc31e20d4cf9afb4e2ba16c5846fc76793f11218da9c475b"
+dependencies = [
+ "libc",
+ "winapi",
+]
 
 [[package]]
 name = "memmap2"
@@ -256,6 +267,7 @@ dependencies = [
  "wayland-cursor",
  "wayland-protocols",
  "wayland-protocols-wlr",
+ "xkbcommon",
 ]
 
 [[package]]
@@ -453,6 +465,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "463705a63313cd4301184381c5e8042f0a7e9b4bb63653f216311d4ae74690b7"
 dependencies = [
  "nom",
+]
+
+[[package]]
+name = "xkbcommon"
+version = "0.5.0-beta.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e7b48304d2a43478ee1c7fad46579cdba7ad6126ffd0c441efacdde55fbdb228"
+dependencies = [
+ "libc",
+ "memmap",
 ]
 
 [[package]]

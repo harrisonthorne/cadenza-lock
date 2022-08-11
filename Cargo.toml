@@ -10,5 +10,6 @@ edition = "2021"
 time = "0.3"
 log = "0.4"
 pam = "0.7"
-smithay-client-toolkit = { git = "https://github.com/Smithay/client-toolkit", default-features = false, features = ["calloop"] }
+smithay-client-toolkit = { git = "https://github.com/Smithay/client-toolkit" }
+wayland-protocols = { version = "=0.30.0-beta.8", features = ["client", "staging", "unstable"] }
 users = "0.11"
